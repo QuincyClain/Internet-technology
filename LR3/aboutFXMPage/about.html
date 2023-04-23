@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Showtimes</title>
+  <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <header>
+        <a class="link-title" href="../mainPage/mainTicketPage.html"><h1 class="site-title">FXM - Movies</h1></a>
+      <nav>
+        <ul>
+          <li><a href="../showtimePage/showtime.html">Showtimes</a></li>
+          <li><a href="#">Select a session</a></li>
+          <li><a class="info" href="#">About the cinema</a></li>
+          <li>
+            <form>
+              <input type="text" placeholder="Поиск по сайту">
+              <button type="submit">Найти</button>
+            </form>
+          </li>
+          <li><a href="../registerPage/Register.html">Sign in</a></li>
+          <li><a href="#">Log in</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="gold-frame">
+        <button class="btn" id="about-button">About FXM cinema</button>
+        <button class="btn" id="authors-button">Authors, creators</button>
+    </main>
+    <p id="content"></p>
+    <script>
+        const aboutButton = document.getElementById("about-button");
+        const authorsButton = document.getElementById("authors-button");
+        const content = document.getElementById("content");
+        
+        aboutButton.addEventListener("click", function() {
+          content.innerText = "FXM cinema was founded in 2005. Our mission is to provide the best movie experience for our customers.";
+        });
+        
+        authorsButton.addEventListener("click", function() {
+          content.innerText = "Created by John Doe and Jane Smith. Contact us at john.doe@example.com or jane.smith@example.com.";
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+    
+
+
+</body>
+</html>>
