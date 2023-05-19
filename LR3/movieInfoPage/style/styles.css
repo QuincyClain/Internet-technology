@@ -73,27 +73,30 @@ nav {
   
   nav ul li:last-child a,
   nav ul li:nth-last-child(2) a {
-    color: #fff;
     padding: 0.8vw;
     border-radius: 5px;
   }
   
   nav ul li:last-child a {
-    background-color: black;
+    background: rgba(55, 50, 0, 0.35);
+    border: 1px solid #FFD600;
+    color: #FFD600;
+    border-radius: 10px;
   }
   
   nav ul li:nth-last-child(2) a {
-    background-color: #eba522;
+    color: #fff;
+    background: #000000;
+    border-radius: 10px;
   }
   
   nav ul li:last-child a:hover {
-    background-color: #8e9a95;
+    background-color:#FFD600;
   }
   
   nav ul li:nth-last-child(2) a:hover {
-    background-color: #f3c267;
+    background-color:#FFD600;
   }
-  
   
   
   form input[type="text"],
@@ -111,14 +114,19 @@ nav {
   
   
   form input[type="text"] {
-    width: 300px;
+    width: 60%;
   }
   
   form button {
     background-color: #cc0022;
     color: white;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 1vw;
+    border-radius: 10px;
+  }
+  
+  form button:hover {
+    background-color: #8a071d;
   }
   
   
@@ -145,7 +153,7 @@ nav {
   .rating {
     font-size: 3vw;
     color: gold;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   
   .movie-description {

@@ -1,3 +1,8 @@
+html {
+  height: auto;
+  height: 100vh;
+}
+
 header {
   /* Цвет фона header */
   margin-top: 0%;
@@ -23,13 +28,19 @@ footer {
   margin: 0;
   padding: 0;
 }
+
 .header-main{
-  background: url('../images/JW2.jpg') no-repeat center center fixed;
+  /* background: url('../images/JW2.jpg') no-repeat center center fixed;
+  background-size: cover; */
+  background-image: url(../images/JW2.jpg);
   background-size: cover;
-  margin-bottom: -4.5vw;
+    background-position:  center center;
+    background-repeat: no-repeat;
+    margin-bottom: -4.5vw;
 }
 
 .bgr{
+
   background-color: black;
   background-size: cover;
 }
@@ -84,25 +95,29 @@ nav ul li:nth-last-child(2) {
 
 nav ul li:last-child a,
 nav ul li:nth-last-child(2) a {
-  color: #fff;
   padding: 0.8vw;
   border-radius: 0.5vw;
 }
 
 nav ul li:last-child a {
-  background-color: black;
+  background: rgba(55, 50, 0, 0.35);
+  border: 1px solid #FFD600;
+  color: #FFD600;
+  border-radius: 10px;
 }
 
 nav ul li:nth-last-child(2) a {
-  background-color: #eba522;
+  color: #fff;
+  background: #000000;
+  border-radius: 10px;
 }
 
 nav ul li:last-child a:hover {
-  background-color: #8e9a95;
+  background-color:#FFD600;
 }
 
 nav ul li:nth-last-child(2) a:hover {
-  background-color: #f3c267;
+  background-color:#FFD600;
 }
 
 
@@ -130,10 +145,18 @@ form button {
   color: white;
   cursor: pointer;
   margin-left: 1vw;
+  border-radius: 10px;
+}
+
+form button:hover {
+  background-color: #8a071d;
 }
 
 
+
 .link-title{
+  display: flex;
+  align-items: center;
   width: 20vw;
   color: #fff;
   text-decoration: none;
@@ -168,16 +191,26 @@ main {
   border: none;
   border-radius: 0.5vw;
   color: white;
-  background-color: #cc0022;
   cursor: pointer;
   margin: 2vw;
   margin-bottom: 10%;
 }
 
-button:hover {
-  background-color: #00a316;
+.john-wick-buttons:last-child{
+  background: #000000;
+  border-radius: 10px;
 }
 
+.john-wick-buttons:nth-last-child(2){
+  background: rgba(55, 50, 0, 0.35);
+  color: #FFD600;
+  border: 1px solid #FFD600;
+  border-radius: 10px;
+}
+
+.john-wick-buttons:hover {
+  background-color:#FFD600;
+}
 
 .now-showing-title{
   font-size: 5vw;
@@ -203,6 +236,7 @@ button:hover {
 
 .movie-card img {
   width: 100%;
+  border-radius: 20px;
 }
 
 .movie-card-title {
@@ -223,29 +257,37 @@ button:hover {
   border: none;
   border-radius: 5px;
   color: white;
-  background-color: #cc0022;
   cursor: pointer;
   margin-top: 20px;
   margin-bottom: 10%;
+  background: rgba(55, 50, 0, 0.35);
+  border: 1px solid #FFD600;
+}
+
+.buy-ticket-button:hover {
+  background-color:#FFD600;
 }
 
 
 
 
-@media screen and (max-width: 880px) {
+
+@media screen and (max-width: 980px) {
   .movie-title {
     font-size: 10vw;
     margin-top: 20%;
+  }
+
+  .bgr{
+    background-color: black;
+    height: 220vh;
+    background-size: cover;
   }
   
   .john-wick-buttons {
     font-size: 5vw;
     padding: 5vw 10vw;
     margin: 5vw;
-  }
-
-  header {
-    flex-direction: column;
   }
 
   nav {
@@ -259,7 +301,7 @@ button:hover {
   form {
     margin-top: 20px;
   }
-  
+
   .card-container{
     flex-direction: column;
   }

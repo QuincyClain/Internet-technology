@@ -37,24 +37,26 @@ header {
   .movie-time-buttons button {
     cursor: pointer;
     font-size: 24px;
-    color: black;
-    background-color: gold;
-    border: 2px solid gold;
-    border-radius: 5px;
+    color:  #FFD600;
+    background: rgba(55, 50, 0, 0.35);
+    border: 1px solid #FFD600;
+    border-radius: 10px;
     padding: 10px;
     margin: 0 10px;
   }
 
   .movie-time-buttons button:hover {
-    color: black;
-    background-color: rgb(176, 157, 47);
+    color: white;
+    background-color:#FFD600;
   }
-  
+
   .link-title{
     width: 20vw;
     color: #fff;
     text-decoration: none;
     margin-left: 1.5%;
+    display: flex;
+    align-items: center;
   }
 
   .movie-title {
@@ -62,7 +64,11 @@ header {
     margin: 0;
     font-size: 36px;
     font-weight: bold;
-    color: gold;
+    color:  #FFD600;
+  }
+
+  .movie-title-age{
+    color: #FFD600;
   }
 
   ul.movie-list{
@@ -72,7 +78,7 @@ header {
 
 
   .movie-genre{
-    color: white;
+    color: #606060;
   }
   
   .movie-time-label{
@@ -80,6 +86,7 @@ header {
   }
 
   .today {
+    font-weight: 700;
     margin-left: 5%;
     font-size: 3vw;
     color: #fff; 
@@ -143,27 +150,30 @@ nav {
   
   nav ul li:last-child a,
   nav ul li:nth-last-child(2) a {
-    color: #fff;
     padding: 0.8vw;
     border-radius: 5px;
   }
   
   nav ul li:last-child a {
-    background-color: black;
+    background: rgba(55, 50, 0, 0.35);
+    border: 1px solid #FFD600;
+    border-radius: 10px;
+    color: #FFD600;
   }
   
   nav ul li:nth-last-child(2) a {
-    background-color: #eba522;
+    background: #000000;
+    color: #fff;
+    border-radius: 10px;
   }
   
   nav ul li:last-child a:hover {
-    background-color: #8e9a95;
+    background-color:#FFD600;
   }
   
   nav ul li:nth-last-child(2) a:hover {
-    background-color: #f3c267;
+    background-color:#FFD600;
   }
-  
   
   
   form input[type="text"],
@@ -181,15 +191,21 @@ nav {
   
   
   form input[type="text"] {
-    width: 300px;
+    width: 60%;
   }
   
   form button {
     background-color: #cc0022;
     color: white;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 1vw;
+    border-radius: 10px;
   }
+  
+  form button:hover {
+    background-color: #8a071d;
+  }
+  
   
   
   .site-title{
