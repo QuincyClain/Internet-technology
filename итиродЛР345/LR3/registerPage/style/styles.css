@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.header h2 {
+  font-size: 36px;
+  margin: 0;
+  color: rgb(25, 24, 24)
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/registerbgr.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+
+.content {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+label {
+  display: none;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  background-color: #ffc107;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffa000;
+}
+
+
+button.register-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffc107;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button.register-button:hover {
+  background-color: #cca500;
+}
+
+.sign-up {
+  color: #ffc107;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.gold-border {
+  border: 3px solid #ffd700;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+
+.tologin{
+  color: white;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link a {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 980px) {
+
+  .content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sign-up {
+    color: #ffc107;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+
+

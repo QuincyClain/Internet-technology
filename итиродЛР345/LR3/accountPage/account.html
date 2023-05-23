@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FXM</title>
+  <link rel="stylesheet" href="style/styles.css">
+  <script src="../scripts/account.js" defer></script>
+</head>
+
+<body>
+  <div class="header-main">
+    <header>
+      <a class="link-title" href="../mainPage/mainTicketPage.html"><h1 class="site-title">FXM - Movies</h1></a>
+      <nav>
+        <ul>
+          <li><a href="../showtimePage/showtime.html">Showtimes</a></li>
+          <li><a href="#">Actors Page</a></li>
+          <li><a href="../aboutFXMPage/about.html">About the cinema</a></li>
+          <li>
+            <form>
+              <input type="text" placeholder="Поиск по сайту">
+              <button type="submit">Найти</button>
+            </form>
+          </li>
+          <li><a href="../accountPage/account.html" id="username-header"></a></li>
+        </ul>
+      </nav>
+    </header>
+  <div class="account-page">
+    <h1 class="account-title">Account Information</h1>
+    <form onsubmit="false">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo">
+        <br>
+        <img id="photo-preview" src="#" alt="Your photo" width="200">
+      </div>
+      <button class="update-btn" onclick="updateAccount()">Update Account</button>
+    </form>
+
+    <div id="order-history-container">
+        <div id="order-history">
+          <h2 class="order-history-title">Order History</h2>
+          <ul id="history-list">
+      </div>
+  </div>
+
+  
+
+
+  <script>
+    const photoInput = document.getElementById("photo");
+    const photoPreview = document.getElementById("photo-preview");
+
+    photoInput.addEventListener("change", () => {
+      const file = photoInput.files[0];
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        photoPreview.src = reader.result;
+      };
+    });
+  </script>
+</body>
+</html>

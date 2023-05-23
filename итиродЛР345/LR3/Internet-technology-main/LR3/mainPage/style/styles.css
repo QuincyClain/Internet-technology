@@ -1,0 +1,308 @@
+html {
+  height: auto;
+  height: 100vh;
+}
+
+header {
+  /* Цвет фона header */
+  margin-top: 0%;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.colored{
+  color: white;
+  font-size: 1vw;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+.header-main{
+  /* background: url('../images/JW2.jpg') no-repeat center center fixed;
+  background-size: cover; */
+  background-image: url(../images/JW2.jpg);
+  background-size: cover;
+    background-position:  center center;
+    background-repeat: no-repeat;
+    margin-bottom: -4.5vw;
+}
+
+.bgr{
+
+  background-color: black;
+  background-size: cover;
+}
+
+
+/* Стили для navbar */
+nav {
+  overflow: auto; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start; /* выравнивание элементов по левому краю */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  float: left; 
+
+  margin: 0 1vw;
+
+  margin-right: 1.5vw;
+}
+
+nav ul li:first-child {
+  margin-right: 1.5vw; 
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4vw;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  border: none;
+}
+
+nav ul li:last-child,
+nav ul li:nth-last-child(2) {
+  margin-left: auto; 
+  margin-right: 0;
+  padding: 1vw;
+}
+
+nav ul li:last-child a,
+nav ul li:nth-last-child(2) a {
+  padding: 0.8vw;
+  border-radius: 0.5vw;
+}
+
+nav ul li:last-child a {
+  background: rgba(55, 50, 0, 0.35);
+  border: 1px solid #FFD600;
+  color: #FFD600;
+  border-radius: 10px;
+}
+
+nav ul li:nth-last-child(2) a {
+  color: #fff;
+  background: #000000;
+  border-radius: 10px;
+}
+
+nav ul li:last-child a:hover {
+  background-color:#FFD600;
+}
+
+nav ul li:nth-last-child(2) a:hover {
+  background-color:#FFD600;
+}
+
+
+
+form input[type="text"],
+form button {
+  font-size: 1.3vw;
+  padding: 0.5vw;
+  border-radius: 0.3vw;
+  border: none;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+
+form input[type="text"] {
+  width: 60%;
+}
+
+form button {
+  background-color: #cc0022;
+  color: white;
+  cursor: pointer;
+  margin-left: 1vw;
+  border-radius: 10px;
+}
+
+form button:hover {
+  background-color: #8a071d;
+}
+
+
+
+.link-title{
+  display: flex;
+  align-items: center;
+  width: 20vw;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5%;
+}
+
+.site-title{
+  justify-content: flex-start; /* выравнивание элементов по левому краю */
+  align-items: center;
+  margin-left: 1.5%;
+  font-size: 3vw;
+  color: white  
+}
+
+
+
+main {
+  padding-top: 2vw;
+  text-align: center;
+}
+
+.movie-title {
+  font-size: 8vw;
+  text-align: center;
+  margin-top: 10%;
+  color: white  
+}
+
+.john-wick-buttons {
+  font-size: 1.5vw;
+  padding: 1.2vw 5vw;
+  border: none;
+  border-radius: 0.5vw;
+  color: white;
+  cursor: pointer;
+  margin: 2vw;
+  margin-bottom: 10%;
+}
+
+.john-wick-buttons:last-child{
+  background: #000000;
+  border-radius: 10px;
+}
+
+.john-wick-buttons:nth-last-child(2){
+  background: rgba(55, 50, 0, 0.35);
+  color: #FFD600;
+  border: 1px solid #FFD600;
+  border-radius: 10px;
+}
+
+.john-wick-buttons:hover {
+  background-color:#FFD600;
+}
+
+.now-showing-title{
+  font-size: 5vw;
+  text-align: center;
+  padding-top: 5%;
+  color: white 
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 65vw;
+  padding-top: 5%;
+}
+
+.movie-card {
+  text-align: center;
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 0 2vw;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.movie-card-title {
+  font-size: 24px;
+  color: #fbfbfb;
+  margin: 10px 0;
+
+}
+
+.movie-genre {
+  font-size: 1.3vw;
+  color: #f0efef;
+}
+
+.buy-ticket-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10%;
+  background: rgba(55, 50, 0, 0.35);
+  border: 1px solid #FFD600;
+}
+
+.buy-ticket-button:hover {
+  background-color:#FFD600;
+}
+
+
+
+
+
+@media screen and (max-width: 980px) {
+  .movie-title {
+    font-size: 10vw;
+    margin-top: 20%;
+  }
+
+  .bgr{
+    background-color: black;
+    height: 220vh;
+    background-size: cover;
+  }
+  
+  .john-wick-buttons {
+    font-size: 5vw;
+    padding: 5vw 10vw;
+    margin: 5vw;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  .card-container{
+    flex-direction: column;
+  }
+}

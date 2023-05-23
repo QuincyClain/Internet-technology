@@ -1,0 +1,269 @@
+header {
+    /* Цвет фона header */
+    margin-top: 0%;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+  
+  body {
+    background: url('../images/b.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+
+  .hrr{
+    margin-right: 5%;
+  }
+
+  .movie-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .movie-time-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  
+  .movie-time-buttons button {
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+    background-color: gold;
+    border: 2px solid gold;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  .movie-time-buttons button:hover {
+    color: black;
+    background-color: rgb(176, 157, 47);
+  }
+  
+  .link-title{
+    width: 20vw;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5%;
+  }
+
+  .movie-title {
+    width: 25vw;
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: gold;
+  }
+
+  ul.movie-list{
+    margin-left: 2.8%;
+    list-style: none;
+  }
+
+
+  .movie-genre{
+    color: white;
+  }
+  
+  .movie-time-label{
+    color: white;
+  }
+
+  .today {
+    margin-left: 5%;
+    font-size: 3vw;
+    color: #fff; 
+    margin-top: 5%;
+  }
+
+  .movie-showtimes {
+    margin-left: 5%;
+    font-size: 6vw;
+    color: gold;
+    margin-top: 5%;
+  }
+
+/* Стили для navbar */
+nav {
+    overflow: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-start; /* выравнивание элементов по левому краю */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    float: left; 
+  
+    margin: 0 1vw;
+  
+    margin-right: 1.5vw;
+  }
+  
+  nav ul li:first-child {
+    text-decoration: underline;
+    margin-right: 1.5vw; 
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4vw;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+    border: none;
+  }
+  
+  nav ul li:last-child,
+  nav ul li:nth-last-child(2) {
+    margin-left: auto; 
+    margin-right: 0;
+    padding: 1vw;
+  }
+  
+  nav ul li:last-child a,
+  nav ul li:nth-last-child(2) a {
+    color: #fff;
+    padding: 0.8vw;
+    border-radius: 5px;
+  }
+  
+  nav ul li:last-child a {
+    background-color: black;
+  }
+  
+  nav ul li:nth-last-child(2) a {
+    background-color: #eba522;
+  }
+  
+  nav ul li:last-child a:hover {
+    background-color: #8e9a95;
+  }
+  
+  nav ul li:nth-last-child(2) a:hover {
+    background-color: #f3c267;
+  }
+  
+  
+  
+  form input[type="text"],
+  form button {
+    font-size: 1.3vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  form input[type="text"] {
+    width: 200px;
+  }
+  
+  form button {
+    background-color: #cc0022;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  
+  .site-title{
+    justify-content: flex-start; /* выравнивание элементов по левому краю */
+    align-items: center;
+    margin-left: 1.5%;
+    font-size: 3vw;
+    color: white  
+  }
+
+
+  @media screen and (max-width: 980px) {
+  
+    .card-container{
+      flex-direction: column;
+    }
+
+    .movie-title {
+      width: 25vw;
+      margin: 0;
+      font-size: 25px;
+      font-weight: bold;
+      color: gold;
+    }
+  
+    .movie-genre {
+      font-size: 20px;
+      color: #f0efef;
+    }
+
+    .movie-time-buttons button {
+      cursor: pointer;
+      font-size: 24px;
+      color: black;
+      background-color: gold;
+      border: 2px solid gold;
+      border-radius: 3px;
+      padding: 8px;
+      margin: 0 5px;
+    }
+  
+    header {
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: space-between;
+      
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    li {
+      margin-left: 0 !important;
+      margin-top: 15px !important;
+    }
+  
+    a {
+      font-size: 18px !important;
+    }
+  
+    
+    input {
+
+      font-size: 18px !important;
+    }
+  
+    button {
+      font-size: 18px !important;
+    }
+  
+  }
+

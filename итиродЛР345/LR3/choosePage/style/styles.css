@@ -1,0 +1,342 @@
+header {
+    /* Цвет фона header */
+    margin-top: 0%;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+  
+  body {
+    background: url('../images/b.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  .link-title{
+    width: 20vw;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5%;
+  }
+
+
+  /* Стили для navbar */
+nav {
+    overflow: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-start; /* выравнивание элементов по левому краю */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    float: left; 
+  
+    margin: 0 1vw;
+  
+    margin-right: 1.5vw;
+  }
+  
+  nav ul li:first-child {
+    margin-right: 1.5vw; 
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4vw;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+    border: none;
+  }
+  
+  nav ul li:last-child,
+  nav ul li:nth-last-child(2) {
+    margin-left: auto; 
+    margin-right: 0;
+    padding: 1vw;
+  }
+  
+  nav ul li:last-child a,
+  nav ul li:nth-last-child(2) a {
+    color: #fff;
+    padding: 0.8vw;
+    border-radius: 5px;
+  }
+  
+  nav ul li:last-child a {
+    background-color: black;
+  }
+  
+  nav ul li:nth-last-child(2) a {
+    background-color: #eba522;
+  }
+  
+  nav ul li:last-child a:hover {
+    background-color: #8e9a95;
+  }
+  
+  nav ul li:nth-last-child(2) a:hover {
+    background-color: #f3c267;
+  }
+  
+  
+  
+  form input[type="text"],
+  form button {
+    font-size: 1.3vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  form input[type="text"] {
+    width: 300px;
+  }
+  
+  form button {
+    background-color: #cc0022;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  
+  .site-title{
+    justify-content: flex-start; /* выравнивание элементов по левому краю */
+    align-items: center;
+    margin-left: 1.5%;
+    font-size: 3vw;
+    color: white  
+  }
+
+
+  table {
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding: 3%;
+    margin: 0 auto;
+  }
+
+  /* Стили для таблицы */
+.seat-map {
+    margin: 0 auto; /* Центрирование таблицы */
+    border-collapse: collapse;
+    border: 1px solid black;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .seat-map td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Стили для кнопок выбора места */
+  .seat-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ccc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .seat-btn:hover {
+    background-color: #aaa;
+  }
+
+  .screen-title{
+    color:white;
+  }
+
+
+  .row-number, .column-number {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 0.2vw;
+    padding: 0.7vw 1.3vw;
+    border: none;
+    border-radius: 0.4vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .gold {
+    background-color: gold;
+    color: black;
+  }
+
+  .grayy{
+    background-color: gray;
+    color:white
+  }
+
+  .green{
+    background-color: green;
+    margin-top: 30%;
+    font-size: 1.3vw;
+    color:white;
+  }
+
+  .redd{
+    background-color: red;
+    color: white;
+  }
+
+  .gold:hover {
+    background-color: rgb(139, 121, 20);
+    color: black;
+  }
+  
+
+  .screen {
+    margin-left: 95%;
+    margin-right: 50%;
+    margin-bottom: 20%;
+    background-color: #c4c4c4;
+    border-radius: 15px;
+    width: 228%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .screen-text {
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: bold;
+    }
+
+    .invisible {
+        visibility: hidden;
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: 0;
+        height: 0;
+        margin-left: 2vw;
+      }
+
+      .rectangle {
+        border: 0.2vw solid Gold;
+        border-radius: 0.5vw;
+        padding: 3%;
+        margin-top: 10%;
+        color: white;
+        width: 50%;
+        height: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3vw;
+        font-weight: bold;
+        text-align: center;
+
+      }
+
+
+      .ggold{
+        border: 1px solid white;
+        border-radius: 0.5vw;
+        padding: 3%;
+        background-color: gold;
+        margin-top: 10%;
+        color: black;
+        width: 30%;
+        height: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3vw;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .gray {
+        border: 1px solid white;
+        border-radius: 0.5vw;
+        padding: 3%;
+        background-color: gray;
+        margin-top: 10%;
+        color: white;
+        width: 30%;
+        height: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.3vw;
+        font-weight: bold;
+        text-align: center;
+      }
+      
+      /* Красная ячейка */
+      .red {
+        border: 1px solid white;
+        border-radius: 0.5vw;
+        background-color: red;
+        padding: 3%;
+        margin-top: 10%;
+        color: white;
+        width: 30%;
+        height: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3vw;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .greenn{
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: green;
+        padding: 3%;
+        color: white;
+        width: 30%;
+        height: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3vw;
+        font-weight: bold;
+        text-align: center;
+      }
+
+
+
+
+

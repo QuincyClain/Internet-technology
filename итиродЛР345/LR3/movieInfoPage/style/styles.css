@@ -1,0 +1,222 @@
+header {
+    /* Цвет фона header */
+    margin-top: 0%;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+  
+  body {
+    background: url('../images/dead.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+  .link-title{
+    width: 20vw;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5%;
+  }
+
+
+  /* Стили для navbar */
+nav {
+    overflow: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-start; /* выравнивание элементов по левому краю */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    float: left; 
+  
+    margin: 0 1vw;
+  
+    margin-right: 1.5vw;
+  }
+  
+  nav ul li:first-child {
+    margin-right: 1.5vw; 
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4vw;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+    border: none;
+  }
+  
+  nav ul li:last-child,
+  nav ul li:nth-last-child(2) {
+    margin-left: auto; 
+    margin-right: 0;
+    padding: 1vw;
+  }
+  
+  nav ul li:last-child a,
+  nav ul li:nth-last-child(2) a {
+    padding: 0.8vw;
+    border-radius: 5px;
+  }
+  
+  nav ul li:last-child a {
+    background: rgba(55, 50, 0, 0.35);
+    border: 1px solid #FFD600;
+    color: #FFD600;
+    border-radius: 10px;
+  }
+  
+  nav ul li:nth-last-child(2) a {
+    color: #fff;
+    background: #000000;
+    border-radius: 10px;
+  }
+  
+  nav ul li:last-child a:hover {
+    background-color:#FFD600;
+  }
+  
+  nav ul li:nth-last-child(2) a:hover {
+    background-color:#FFD600;
+  }
+  
+  
+  form input[type="text"],
+  form button {
+    font-size: 1.3vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  form input[type="text"] {
+    width: 60%;
+  }
+  
+  form button {
+    background-color: #cc0022;
+    color: white;
+    cursor: pointer;
+    margin-left: 1vw;
+    border-radius: 10px;
+  }
+  
+  form button:hover {
+    background-color: #8a071d;
+  }
+  
+  
+  .site-title{
+    justify-content: flex-start; /* выравнивание элементов по левому краю */
+    align-items: center;
+    margin-left: 1.5%;
+    font-size: 3vw;
+    color: white  
+  }
+
+
+  .movie-info {
+    float: right;
+    width: 45%;
+    padding-left: 20px;
+  }
+  
+  .movie-title {
+    font-size: 6vw;
+    color: #fff;
+  }
+  
+  .rating {
+    font-size: 3vw;
+    color: gold;
+    margin-top: 5px;
+  }
+  
+  .movie-description {
+    font-size: 2vw;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+
+
+  .actor-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .actor-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .actor-list li:last-child {
+    margin-right: 0;
+  }
+  
+  .actor-list img {
+    width:100px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .actor-name {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+  }
+
+  .buy-ticket-button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: gold;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 50px;
+    margin: 50px auto 0;
+    border-radius: 5px;
+  }
+
+  .buy-ticket-button {
+    text-decoration: none;
+    position: fixed;
+    bottom: 5%;
+    left: 35%;
+    transform: translateX(-100%);
+  }
+  
+
+  .buy-ticket-button:hover {
+    background-color: rgb(146, 129, 36);
+  }

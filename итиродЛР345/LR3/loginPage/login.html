@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FXM Movies</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="../scripts/registration.js"></script>
+    <!-- <script src="../scripts/auth.js"></script> -->
+</head>
+<body>
+    <div class="content">
+        <div class="gold-border">
+            <h1 class="sign-up">Log in</h1>
+            <form action="../accountPage/account.html" onsubmit="return login()">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit" class="register-button">Log in</button>
+            </form>
+            <div class="login-link">
+                <span class="tologin">Don't have an account? </span><a href="../registerPage/Register.html">Register account</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

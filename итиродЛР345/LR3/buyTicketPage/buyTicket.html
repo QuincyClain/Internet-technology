@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Choose</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="../scripts/buy-ticket.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="link-title" href="../mainPage/mainTicketPage.html">
+            <h1 class="site-title">FXM - Movies</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../showtimePage/showtime.html">Showtimes</a></li>
+                <li><a href="#">Select a session</a></li>
+                <li><a href="#">About the cinema</a></li>
+                <li class="profile-button"><a href="../accountPage/account.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <div class="border">
+            <div class="main-info">
+                <img src="./images/film.png" alt="film" id="picture">
+                <div class="main-info-desc">
+                    <h1 id="movie-title" class="movie-title"></h1>
+                    <p class="movie-genre">action movie, detective</p>
+
+                    <div class="movie-time">
+                        <p class="movie-genre">Time:</p>
+                        <button id="movie_time" class="movie_btn"></button>
+                    </div>
+                    <div class="movie-price">
+                        <p class="movie-genre">Price: </p>
+                        <button id="price" class="movie_btn"></button>
+                    </div>
+
+                    <a id = "paypal-btn" href="#" class="buy-ticket-button" onclick="buy()"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+<a id="paypal-btn" href="#" class="buy-ticket-button" onclick="buy()"></a>
+
+<script>
+    paypal.Button.render({
+        //Configure environment
+        env: 'sandbox',
+        client: {
+            sandbox: 'AS07XKw5gAx6fIWRECvZpvh7su1wCaP1XwR_abtM_MLMtV0IpP4qb5-Ju0g8SmDB4sMJV5iLOE3fgFbO'
+        },
+        //Customize button
+        locale: 'en_US',
+        style: {
+            size: 'medium',
+            color: 'gold',
+            shape: 'pill'
+        },
+        commit: true,
+        //Set up a payment
+        payment: function (data, actions) {
+            return actions.payment.create({
+                transactions: [{
+                    amount: {
+                        total: price,
+                        currency: 'USD'
+                    }
+                }]
+            });
+        },
+        //Execute the payment
+        onAuthorize: function (data, actions) {
+            return actions.payment.execute().then(function () {
+                buy(); // Вызов метода buy()
+            });
+        }
+    }, '#paypal-btn');
+</script>
+
+
+</html>

@@ -1,0 +1,277 @@
+header {
+    /* Цвет фона header */
+    margin-top: 0%;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .header-main .actor-info,
+.bgr .actor-info {
+  text-align: start;
+}
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  html {
+      height: 100%;
+      width: 100%;
+      display: flex;
+  }
+  
+  .colored{
+    color: white;
+    font-size: 1vw;
+  }
+  
+  footer {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-main {
+    background-color: rgb(43, 42, 42);
+    background-size: cover;
+    height: 100%; /* Изменение высоты на 100vh */
+  }
+  
+  .bgr {
+    background-color: black;
+    background-size: cover;
+    margin-top: -4.5vw; /* Добавление отрицательного отступа сверху */
+  }
+  
+  
+  .header-main,
+.bgr {
+  margin: 0;
+  padding: 0;
+}
+  /* Стили для navbar */
+  nav {
+    overflow: auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-start; /* выравнивание элементов по левому краю */
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav ul li {
+    float: left; 
+  
+    margin: 0 1vw;
+  
+    display: flex;
+  
+    margin-right: 1.5vw;
+  }
+  
+  nav ul li:first-child {
+    margin-right: 1.5vw; 
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4vw;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+    border: none;
+  }
+  
+  nav ul li:last-child,
+  nav ul li:nth-last-child(2) {
+    margin-left: auto; 
+    margin-right: 0;
+    padding: 1vw;
+  }
+  
+  nav ul li:last-child a,
+  nav ul li:nth-last-child(2) a {
+    color: #fff;
+    padding: 0.8vw;
+    border-radius: 0.5vw;
+  }
+  
+  nav ul li:last-child a {
+    background-color: black;
+  }
+  
+  nav ul li:nth-last-child(2) a {
+    background-color: #eba522;
+  }
+  
+  nav ul li:last-child a:hover {
+    background-color: #8e9a95;
+  }
+  
+  nav ul li:nth-last-child(2) a:hover {
+    background-color: #f3c267;
+  }
+  
+  
+  
+  form input[type="text"],
+  form button {
+    font-size: 1.3vw;
+    padding: 0.5vw;
+    border-radius: 0.3vw;
+    border: none;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  form input[type="text"] {
+    width: 60%;
+  }
+  
+  form button {
+    background-color: #cc0022;
+    color: white;
+    cursor: pointer;
+    margin-left: 1vw;
+  }
+  
+  
+  .link-title{
+    width: 20vw;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5%;
+  }
+  
+  .site-title{
+    justify-content: flex-start; /* выравнивание элементов по левому краю */
+    align-items: center;
+    margin-left: 1.5%;
+    font-size: 3vw;
+    color: white  
+  }
+  
+  
+  
+  main {
+    padding-top: 2vw;
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #00a316;
+  }
+
+
+
+  .actors-section {
+    background-color: #333333;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .actor-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .actor-image img {
+    width: 130px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 40%;
+  }
+  
+  .actor-info {
+    margin-left: 20px;
+    color: #ffffff; /* белый цвет текста */
+  }
+  
+  .actor-info h2 {
+    margin: 0;
+    font-size: 30px; /* увеличенный размер шрифта заголовка */
+  }
+  
+  .actor-info p {
+    margin: 0;
+    font-size: 18px; /* увеличенный размер шрифта текста */
+  }
+  
+  
+  
+  mark {
+    background-color: yellow;
+    display: inline-block;
+    /* Дополнительные стили */
+  }
+  
+  
+  
+  @media screen and (max-width: 980px) {
+  
+    header {
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: space-between;
+      
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    li {
+      margin-left: 0 !important;
+      margin-top: 15px !important;
+    }
+  
+    a {
+      font-size: 18px !important;
+    }
+  
+    
+    input {
+      font-size: 18px !important;
+    }
+  
+    button {
+      font-size: 18px !important;
+    }
+  
+  }
+  
+  .buttons-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }

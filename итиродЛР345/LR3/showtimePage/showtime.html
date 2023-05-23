@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showtimes</title>
+  <link rel="stylesheet" href="style/styles.css">
+  <script src="../scripts/film-pick.js"></script>
+  <script src="../scripts/auth.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a class="link-title" href="../mainPage/mainTicketPage.html"><h1 class="site-title">FXM - Movies</h1></a>
+      <nav>
+        <ul>
+          <li><a href="../showtimePage/showtime.html">Showtimes</a></li>
+          <li><a href="#">Select a session</a></li>
+          <li><a href="../aboutFXMPage/about.html">About the cinema</a></li>
+          <li>
+            <form>
+              <input type="text" placeholder="Поиск по сайту">
+              <button type="submit">Найти</button>
+            </form>
+          </li>
+          <li><a id="header-btn-1" href="../registerPage/Register.html">Sign in</a></li>
+          <li><a id="header-btn-2" href="#">Log in</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <h1 class="movie-showtimes">Movie showtimes</h1>
+        <p class="today">Today</p>
+
+        <ul class="movie-list">
+            <li>
+              <div class="movie-info">
+                <h2 class="movie-title">Deadpool 18+</h2>
+                <div class="movie-time-buttons">
+                  <button onclick="setData('Deadpool', '15:50')">15:50</button>
+                  <button onclick="setData('Deadpool', '16:45')">16:45</button>
+                  <button onclick="setData('Deadpool', '18:30')">18:30</button>
+                </div>
+              </div>
+              <p class="movie-genre">Action, Comedy</p>
+              <hr class="hrr">
+            </li>
+            <li>
+              <div class="movie-info">
+                <h2 class="movie-title">John Wick 4</h2>
+                <div class="movie-time-buttons">
+                  <button onclick="setData('John Wick 4', '12:00')">12:00</button>
+                  <button onclick="setData('John Wick 4', '14:30')">14:30</button>
+                  <button onclick="setData('John Wick 4', '20:15')">20:15</button>
+                </div>
+              </div>
+              <p class="movie-genre">Action, Drama</p>
+              <hr class="hrr">
+            </li>
+            <li>
+                <div class="movie-info">
+                  <h2 class="movie-title">Fantasy Island</h2>
+                  <div class="movie-time-buttons">
+                    <button onclick="setData('Fantasy Island', '12:00')">12:00</button>
+                    <button onclick="setData('Fantasy Island', '14:30')">14:30</button>
+                    <button onclick="setData('Fantasy Island', '20:15')">20:15</button>
+                  </div>
+                </div>
+                <p class="movie-genre">Fantasy, Drama</p>
+                <hr class="hrr">
+              </li>
+              <li>
+                <div class="movie-info">
+                  <h2 class="movie-title">Red Notice</h2>
+                  <div class="movie-time-buttons">
+                    <button onclick="setData('Red Notice', '12:00')">12:00</button>
+                    <button onclick="setData('Red Notice', '14:30')">14:30</button>
+                    <button onclick="setData('Red Notice', '20:15')">20:15</button>
+                  </div>
+                </div>
+                <p class="movie-genre">Detective, Comedy</p>
+                <hr class="hrr">
+              </li>
+          </ul>
+
+          <p class="today">Tomorrow</p>
+
+        <ul class="movie-list">
+            <li>
+                <div class="movie-info">
+                  <h2 class="movie-title">Deadpool 18+</h2>
+                  <div class="movie-time-buttons">
+                    <button onclick="setData('Deadpool', '15:50')">15:50</button>
+                    <button onclick="setData('Deadpool', '16:45')">16:45</button>
+                    <button onclick="setData('Deadpool', '18:30')">18:30</button>
+                  </div>
+                </div>
+                <p class="movie-genre">Action, Comedy</p>
+                <hr class="hrr">
+              </li>
+              <li>
+                <div class="movie-info">
+                  <h2 class="movie-title">John Wick 4</h2>
+                  <div class="movie-time-buttons">
+                    <button onclick="setData('John Wick 4', '12:00')">12:00</button>
+                    <button onclick="setData('John Wick 4', '14:30')">14:30</button>
+                    <button onclick="setData('John Wick 4', '20:15')">20:15</button>
+                  </div>
+                </div>
+                <p class="movie-genre">Action, Drama</p>
+                <hr class="hrr">
+              </li>
+              <li>
+                  <div class="movie-info">
+                    <h2 class="movie-title">Fantasy Island</h2>
+                    <div class="movie-time-buttons">
+                      <button onclick="setData('Fantasy Island', '12:00')">12:00</button>
+                      <button onclick="setData('Fantasy Island', '14:30')">14:30</button>
+                      <button onclick="setData('Fantasy Island', '20:15')">20:15</button>
+                    </div>
+                  </div>
+                  <p class="movie-genre">Fantasy, Drama</p>
+                  <hr class="hrr">
+                </li>
+                <li>
+                  <div class="movie-info">
+                    <h2 class="movie-title">Red Notice</h2>
+                    <div class="movie-time-buttons">
+                      <button onclick="setData('Red Notice', '12:00')">12:00</button>
+                      <button onclick="setData('Red Notice', '14:30')">14:30</button>
+                      <button onclick="setData('Red Notice', '20:15')">20:15</button>
+                    </div>
+                  </div>
+                  <p class="movie-genre">Detective, Comedy</p>
+                  <hr class="hrr">
+                </li>
+            </ul>
+
+    </main>
+<body>
